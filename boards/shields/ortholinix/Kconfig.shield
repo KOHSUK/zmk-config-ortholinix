@@ -1,0 +1,5 @@
+config SHIELD_ORTHOLINIX_LEFT
+    def_bool $(shields_list_contains,ortholinix_left)
+
+config SHIELD_ORTHOLINIX_RIGHT
+    def_bool $(shields_list_contains,ortholinix_right)

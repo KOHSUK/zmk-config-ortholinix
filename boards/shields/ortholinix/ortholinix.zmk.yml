@@ -1,0 +1,12 @@
+file_format: "1"
+id: ortholinix
+name: Ortholinix
+type: shield
+url: https://github.com/KOHSUK/zmk-config-ortholinix/
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - encoder
+siblings:
+  - ortholinix_right
+  - ortholinix_left
