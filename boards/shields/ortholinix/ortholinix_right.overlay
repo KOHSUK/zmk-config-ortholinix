@@ -2,13 +2,13 @@
 
 &kscan0 {
     gpios
-        = <&xiao_d 0 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 1 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 2 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 3 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 6 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
+        = <&xiao_d 0 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 1 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 2 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 3 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 6 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
         ;
 };
 
@@ -18,4 +18,12 @@
 
 &default_transform { // Offset of 3 because the left side has 3 columns
     row-offset = <7>;
+};
+
+/ {
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&right_encoder>;
+        triggers-per-rotation = <20>;
+    };
 };
