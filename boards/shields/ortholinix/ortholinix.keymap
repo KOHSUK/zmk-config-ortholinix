@@ -46,10 +46,10 @@
 
         fn3 {
             bindings = <
-                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4    &kp N5                     &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans &trans &trans &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans &trans &trans &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans &trans &trans &kp LANG1 &kp LANG2  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &kp ESC &kp N1 &kp N2           &kp N3         &kp N4           &kp N5                                &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans &kp LC(LEFT)     &kp LC(UP)     &kp LC(DOWN)     &kp LC(RIGHT)                         &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans &kp LC(LG(LEFT)) &kp LC(LG(UP)) &kp LC(LG(DOWN)) &kp LC(LG(RIGHT))                     &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans &trans           &trans         &kp LANG1        &kp LANG2          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
