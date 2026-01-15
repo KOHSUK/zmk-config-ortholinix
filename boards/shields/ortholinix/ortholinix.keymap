@@ -6,9 +6,10 @@
 #define fn1 1
 #define fn2 2
 #define fn3 3
-#define fn4 4 
-#define fn5 5 
+#define fn4 4
+#define fn5 5
 #define fn6 6
+#define fn7 7
 
 / {
     keymap {
@@ -16,10 +17,10 @@
 
         default { // Layer 0
             bindings = <
-                &kp EQUAL  &kp Q     &kp W     &kp E  &kp R        &kp T                                &kp Y     &kp U       &kp I      &kp O      &kp P    &kp MINUS
-                &kp BSLH   &kp A     &kp S     &kp D  &kp F        &kp G                                &kp H     &kp J       &kp K      &kp L      &kp SEMI &kp SQT
-                &kp LSHFT  &kp Z     &kp X     &kp C  &kp V        &kp B                                &kp N     &kp M       &kp COMMA  &kp PERIOD &kp FSLH &kp RSHFT
-                &kp LCTRL  &kp LALT  &kp LWIN  &mo 5  &lt 2 SPACE  &lt 1 SPACE  &bt BT_NXT  &bt BT_PRV  &lt 3 RET &lt 4 BSPC  &mo 6      &kp RWIN   &kp RALT &kp RCTRL
+                &lt 7 EQUAL  &kp Q     &kp W     &kp E  &kp R        &kp T                                &kp Y        &kp U       &kp I       &kp O      &kp P    &kp MINUS
+                &kp BSLH   &kp A     &kp S     &kp D  &kp F        &kp G                                &kp H        &kp J       &kp K       &kp L      &kp SEMI &kp SQT
+                &kp LSHFT  &kp Z     &kp X     &kp C  &kp V        &kp B                                &kp N        &kp M       &kp COMMA   &kp PERIOD &kp FSLH &kp RSHFT
+                &kp LCTRL  &kp LALT  &kp LWIN  &mo 5  &lt 2 SPACE  &lt 1 SPACE  &bt BT_NXT  &bt BT_PRV  &lt 3 SPACE  &lt 4 RET   &mo 6 BSPC  &kp RWIN   &kp RALT &kp RCTRL
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -79,6 +80,15 @@
                 &trans &trans &trans &trans &trans &trans                     &trans  &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
                 &trans &trans &trans &trans &trans &trans                     &trans  &trans    &trans    &trans     &trans     &trans
                 &trans &trans &trans &trans &trans &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans
+            >;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+        fn7 {
+            bindings = <
+                &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+                &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                     &kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12
+                &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
