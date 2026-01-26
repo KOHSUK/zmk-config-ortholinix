@@ -48,7 +48,7 @@
         fn3 {
             bindings = <
                 &kp ESC &kp N1 &kp N2           &kp N3         &kp N4           &kp N5                                &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans &kp LC(LEFT)     &kp LC(UP)     &kp LC(DOWN)     &kp LC(RIGHT)                         &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans &kp LC(LEFT)     &kp LC(UP)     &kp LC(DOWN)     &kp LC(RIGHT)                         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
                 &trans  &trans &kp LC(LG(LEFT)) &kp LC(LG(UP)) &kp LC(LG(DOWN)) &kp LC(LG(RIGHT))                     &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans &trans           &trans         &kp LANG1        &kp LANG2          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
