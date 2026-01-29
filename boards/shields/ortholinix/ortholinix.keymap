@@ -27,20 +27,20 @@
 
         fn1 {
             bindings = <
-                &trans &kp N1 &kp N2 &kp N3        &kp N4   &kp N5                       &kp N6         &kp  N7   &kp N8        &kp N9  &kp N0   &trans
-                &trans &trans &trans &trans        &trans   &trans                       &trans         &trans    &trans        &trans  &trans   &trans
-                &trans &trans &kp LT &kp LS(LBKT)  &kp LBKT &kp LPAR                     &kp RPAR       &kp RBKT  &kp RS(RBKT)  &kp RT  &trans   &trans
-                &trans &trans &trans &trans        &trans   &trans    &trans     &trans  &kp LG(SPACE)  &trans    &trans        &trans  &trans   &trans
+                &trans &kp N1 &kp N2 &kp N3        &kp N4   &kp N5                       &kp N6         &kp  N7   &kp N8        &kp N9  &kp N0    &trans
+                &trans &trans &trans &trans        &trans   &trans                       &trans         &trans    &trans        &trans  &trans    &trans
+                &trans &trans &kp LT &kp LS(LBKT)  &kp LBKT &kp LPAR                     &kp RPAR       &kp RBKT  &kp RS(RBKT)  &kp GT  &kp BSLH  &trans
+                &trans &trans &trans &trans        &trans   &trans    &trans     &trans  &kp LG(SPACE)  &trans    &trans        &trans  &trans    &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn2 {
             bindings = <
-                &trans &trans &trans &trans &trans &trans                     &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR   &kp PLUS
-                &trans &trans &trans &trans &trans &trans                     &trans     &trans    &trans    &trans    &trans     &trans
-                &trans &trans &trans &trans &trans &trans                     &trans     &trans    &trans    &trans    &trans     &trans
-                &trans &trans &trans &trans &trans &trans  &trans     &trans  &trans     &trans    &trans    &trans    &trans     &trans
+                &trans &trans &trans &trans &trans &trans                     &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR      &kp PLUS
+                &trans &trans &trans &trans &trans &trans                     &trans     &trans    &trans    &trans    &trans        &trans
+                &trans &trans &trans &trans &trans &trans                     &trans     &trans    &trans    &trans    &kp RS(BSLH)  &trans
+                &trans &trans &trans &trans &trans &trans  &trans     &trans  &trans     &trans    &trans    &trans    &trans        &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -50,7 +50,7 @@
                 &kp ESC &kp N1 &kp N2           &kp N3         &kp N4           &kp N5                                &kp N6    &kp  N7   &kp N8  &kp N9     &kp N0   &trans
                 &trans  &trans &kp LC(LEFT)     &kp LC(UP)     &kp LC(DOWN)     &kp LC(RIGHT)                         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
                 &trans  &trans &kp LC(LG(LEFT)) &kp LC(LG(UP)) &kp LC(LG(DOWN)) &kp LC(LG(RIGHT))                     &trans    &trans    &trans  &trans  &trans  &trans
-                &trans  &trans &trans           &trans         &kp LANG1        &kp LANG2          &trans     &trans  &trans    &trans    &trans  &trans  &trans  &trans
+                &kp CAPS  &trans &trans           &trans         &kp LANG1        &kp LANG2          &trans     &trans  &trans    &trans    &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
