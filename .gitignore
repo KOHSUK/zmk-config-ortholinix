@@ -50,3 +50,5 @@ out/
 
 gerber/
 
+*.step
+*.FCBak
