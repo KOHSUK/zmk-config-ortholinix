@@ -57,10 +57,10 @@
 
         fn4 {
             bindings = <
-                &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                     &trans  &trans  &trans  &trans  &trans  &trans
-                &trans &trans   &trans &trans   &trans   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-                &trans &trans   &trans &trans   &trans   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-                &trans &trans   &trans &trans   &trans   &trans    &trans     &trans   &trans  &trans  &trans  &trans  &trans  &trans
+                &trans &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                     &trans  &trans  &trans  &trans  &trans  &trans
+                &trans &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)                     &trans  &trans  &trans  &trans  &trans  &trans
+                &trans &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                     &trans  &trans  &trans  &trans  &trans  &trans
+                &trans &trans     &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
