@@ -32,7 +32,7 @@ Ortholinix は、左右分割型のワイヤレス自作キーボードです。
 ├── build.yaml                        # GitHub Actions のビルド対象
 ├── cases/
 │   ├── ortholinix.FCStd              # FreeCAD のケース設計原本
-│   └── models/                       # 左右の TopCover / TopPlate / BackPlate（STEP）
+│   └── models/                       # ケース・スイッチ・ノブ（STEP）
 ├── config/west.yml                   # ZMK / west マニフェスト
 └── kicad/
     ├── left/                         # 左手側の回路図・PCB・ライブラリ
@@ -91,11 +91,12 @@ Gerber や BOM はリポジトリに含まれていません。発注時は KiCa
 
 ## ケースデータ
 
-ケースの編集には [`cases/ortholinix.FCStd`](cases/ortholinix.FCStd) を使用します。`cases/models/` には次の STEP データがあります。
+ケースの編集には [`cases/ortholinix.FCStd`](cases/ortholinix.FCStd) を使用します。`cases/models/` に写真の構成に対応する印刷用 STEP データを収録しています。
 
 - `ortholinix-TopCover_left.step` / `ortholinix-TopCover_right.step`
-- `ortholinix-TopPlate_left.step` / `ortholinix-TopPlate_right.step`
 - `ortholinix-BackPlate_left.step` / `ortholinix-BackPlate_right.step`
+- `ortholinix-Switch.step` ×2（左右共通）
+- `ortholinix-Encoder_knob.step` ×2（左右共通）
 
 プリント前に、使用するプリンター、材料、スイッチ、ネジ、基板の実寸に合わせてクリアランスを確認してください。
 
