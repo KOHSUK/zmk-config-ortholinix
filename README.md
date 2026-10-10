@@ -111,6 +111,17 @@ Gerber や BOM はリポジトリに含まれていません。発注時は KiCa
 | PCB | `kicad/left/`、`kicad/right/` |
 | ケース | `cases/ortholinix.FCStd` |
 
+## クレジット・ライセンス
+
+KiCad フットプリントは以下の公開ライブラリを使用しています。著作権は各作者・権利者に帰属します。
+
+| 引用元 | 作者 | ライセンス原文 |
+| --- | --- | --- |
+| [roBa / pcb](https://github.com/kumamuk-git/roBa/tree/main/pcb) | kumamuk-git | [GPL v3](LICENSES/roBa-GPL-3.0.txt) |
+| [KiCAD_FootPrint](https://github.com/Salicylic-acid3/KiCAD_FootPrint) | Salicylic_acid3 ほか | [MIT](LICENSES/KiCAD_FootPrint-MIT.txt) |
+
+対象ファイルと出典の詳細は [THIRD_PARTY.md](THIRD_PARTY.md) を参照してください。
+
 ## 関連リンク
 
 - [ZMK Firmware](https://zmk.dev/)
