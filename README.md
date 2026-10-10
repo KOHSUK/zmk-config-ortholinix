@@ -1,5 +1,9 @@
 # Ortholinix
 
+<p align="center">
+  <img src="docs/images/ortholinix.jpg" alt="透明ケースと白いキーキャップを備えた左右分割キーボード Ortholinix" width="900">
+</p>
+
 Ortholinix は、左右分割型のワイヤレス自作キーボードです。
 
 このリポジトリには、ZMK ファームウェア、KiCad の基板設計データ、FreeCAD のケース設計データが含まれています。
